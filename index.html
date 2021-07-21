@@ -15,6 +15,13 @@
     <link rel="stylesheet" type="text/css" href="css/style_odassy3.css">
 </head>
 <body>
+	<div id="preloader"></div>
+    <script>
+        var loader = document.getElementById("preloader");
+           window.addEventListener("load", function(){
+                loader.style.display = "none";  
+        })
+    </script>
     <video class="inter" src="intersteller.mp4" muted autoplay loop></video><div class="overlap"></div>
     <audio id="myAudio" loop><source src="interms.mp3" type="audio/mpeg"></audio>
         <script>
@@ -71,7 +78,7 @@ myAudio.onpause = function() {
                 <div class="column right">
                     <div class="text">I'm Nirmal<span class="typing-2"></span></div>
                     <p>I'm a 19 years old boy with extraordinary dreams, and an infinite love in science. I compare myself with the stars, shine and twinkle in the moonlit sky. When the stars are out and shining bright, people will wonder and exclaim how beautiful they are, and how lucky they are to have an universe as beautiful and mysterious as it is. In a same way I feel like the tiniest star out there. We may play a small role in life, but that gives people no right to use us, and take us for granted. One day they will look up to the sky, and though they won't notice, that star will be gone.</p>
-                    <a href="about.html">My story</a>
+                    <a href="#" onclick="clickno()">My story</a>
                 </div>
             </div>
         </div>
@@ -113,7 +120,7 @@ myAudio.onpause = function() {
             <div class="skills-content">
                 <div class="column left">
                     <div class="text">My creative skills & experiences.</div>
-                    <p>*****UNDER CONSTRUCTION***</p>
+                    <p>*****UNDER CONSTRUCTION*****</p>
                     <a href="#">Read more</a>
                 </div>
                 <div class="column right">
@@ -134,21 +141,21 @@ myAudio.onpause = function() {
                     <div class="bars">
                         <div class="info">
                             <span>JavaScript</span>
-                            <span>80%</span>
+                            <span>10%</span>
                         </div>
                         <div class="line js"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>PHP</span>
-                            <span>50%</span>
+                            <span>Python</span>
+                            <span>30%</span>
                         </div>
                         <div class="line php"></div>
                     </div>
                     <div class="bars">
                         <div class="info">
-                            <span>MySQL</span>
-                            <span>70%</span>
+                            <span>JAVA</span>
+                            <span>25%</span>
                         </div>
                         <div class="line mysql"></div>
                     </div>
@@ -264,7 +271,7 @@ myAudio.onpause = function() {
                             <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <div class="button-area">
-                            <button type="submit" onclick="clickno()">Send message</button>
+                            <button type="submi" onclick="clickno()">Send message</button>
                         </div>
                     </form>
                 </div>
