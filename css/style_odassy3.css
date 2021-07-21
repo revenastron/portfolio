@@ -580,6 +580,31 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
+.social2 ul{
+	list-style: none;
+	text-align: center;
+}
+.social2 li{
+	display: inline-block;
+}
+.social2 a {
+	text-decoration: none;
+	padding: 50px 13px;
+	font-size: 22px;
+	color: #3cded3;
+	letter-spacing: 1px;
+}
+.social2 span{
+	padding-right: 28px;
+	border-right: 1px solid;
+	border-color: rgba(0,0,0,.06);
+}
+.yt span{
+	border: none;
+}
+.social p{
+	mix-blend-mode: overlay;
+}
 /* responsive media query start */
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -702,4 +727,15 @@ footer span a:hover{
         font-size: 23px;
         line-height: 38px;
     }
+.social2 ul{
+	padding: 0;
+}
+.social2 span{
+	font-size: 13px;
+	padding: 5px;
+	border-right: none;
+}
+.social2 a{
+	padding: 0;
+}
 }
