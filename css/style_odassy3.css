@@ -26,6 +26,18 @@ html{
 section{
     padding: 100px 0;
 }
+.text1{
+    font-size:15px;
+     font-family:poppins, sans-serif;
+}
+#preloader{
+    background:#33374f  url("../images/planet.gif") no-repeat center center;
+    background-size: 35%;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1000;
+}
 .overlap{
     width: 100%;
     position: absolute;
@@ -173,7 +185,7 @@ section .title::after{
 }
 .scroll-up-btn{
     position: fixed;
-    height: 45px;
+    height: 41px;
     width: 42px;
     background: #6a58b4;
     right: 30px;
@@ -401,13 +413,13 @@ section .title::after{
     width: 60%;
 }
 .skills-content .right .js::before{
-    width: 80%;
+    width: 10%;
 }
 .skills-content .right .php::before{
-    width: 50%;
+    width: 30%;
 }
 .skills-content .right .mysql::before{
-    width: 70%;
+    width: 25%;
 }
 /* teams section styling */
 .teams .title::after{
