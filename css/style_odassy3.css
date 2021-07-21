@@ -27,9 +27,10 @@ section{
     padding: 100px 0;
 }
 .text1{
-    font-size:10px;
-     font-family:ubuntu, sans-serif;
-    padding:12px 0 7px;
+    padding-top: 12px;
+    padding-bottom: 7px;
+    font-size: 10px;
+    font-family: ubuntu, sans-serif;
 }
 #preloader{
     background:#33374f  url("../images/planet.gif") no-repeat center center;
