@@ -27,9 +27,9 @@ section{
     padding: 100px 0;
 }
 .text1{
-    padding-top: 12px;
-    padding-bottom: 7px;
-    font-size: 10px;
+      padding-bottom:4px;
+      padding-top:9px;
+    font-size: 13px;
     font-family: ubuntu, sans-serif;
 }
 #preloader{
@@ -754,4 +754,7 @@ footer span a:hover{
 }
 #preloader{
     background-size: 52%;
+}
+.text1{
+    font-size:12px;
 }
