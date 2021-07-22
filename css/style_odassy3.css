@@ -582,10 +582,11 @@ section .title::after{
 }
 /* footer section styling */
 footer{
-    background: #111;
+    background: #010101;
     padding: 15px 23px;
     color: #fff;
     text-align: center;
+    font-size:14px;
 }
 footer span a{
     color: #6a58b4;
@@ -768,4 +769,6 @@ footer span a:hover{
 .walle{
     width: 100%;
 }
-}
+.footer{
+     font-size:11px;	
+	}
