@@ -271,8 +271,8 @@ section .title::after{
     width: 45%;
 }
 .about .about-content .left img{
-    height: 400px;
-    width: 400px;
+    height: 99%;
+    width: 99%;
     object-fit: cover;
     border-radius: 6px;
 }
@@ -633,6 +633,9 @@ footer span a:hover{
 }
 .blacked{
 	margin-top:-9px;
+}
+section#teams {
+    padding: 40px 0 1px;
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1104px) {
