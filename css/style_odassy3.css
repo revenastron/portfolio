@@ -594,32 +594,39 @@ footer span a{
 footer span a:hover{
     text-decoration: underline;
 }
-.social2 ul{
-	list-style: none;
-	text-align: center;
+
+.icons22{
+    text-decoration: none;
+    display: flex;
+    z-index: 2;
+    color: #fff;
+    margin: 0;
+    justify-content: center;
+    padding-top: 13px;
 }
-.social2 li{
-	display: inline-block;
+.icons22 a{
+    padding: 10px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: transparent;
+    background: linear-gradient(-30deg,black,white);
+    -webkit-background-clip: text;
 }
-.social2 a {
-	text-decoration: none;
-	padding: 20px 13px;
-	font-size: 22px;
-	color: #6a58b4;
-	letter-spacing: 1px;
+.contact-content{
+    padding-bottom: 18px;
 }
-.social2 span{
-	padding-right: 28px;
-	border-right: 1px solid;
-	border-color: rgba(0,0,0,.06);
+#mysl{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
 }
-.yt span{
-	border: none;
+.walle{
+    padding: 0;
+    margin-bottom: -6px;
 }
-.social p{
-	mix-blend-mode: overlay;
-}
-/* responsive media query start */
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1104px) {
     .about .about-content .left img{
         height: 350px;
@@ -757,4 +764,8 @@ footer span a:hover{
 }
 .text1{
     font-size:12px;
+}
+.walle{
+    width: 100%;
+}
 }
