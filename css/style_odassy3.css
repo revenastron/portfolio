@@ -36,9 +36,11 @@ section{
     background:#33374f  url("../images/planet.gif") no-repeat center center;
     background-size: 43%;
     width: 100%;
-    height: 140%;
+    height: 130%;
     position: fixed;
     z-index: 1000;
+    background-position-x: center;
+    background-position-y: 37%;
 }
 .overlap{
     width: 100%;
