@@ -618,16 +618,17 @@ footer span a:hover{
     justify-content: center;
     font-size: 40px;
     color: transparent;
-    background: linear-gradient(-30deg,black,#9e42ff);
+    background: linear-gradient(-30deg,black,#8542ff);
     -webkit-background-clip: text;
 }
-.contact-content{
-    padding-bottom: 18px;
+#contact{
+    padding-bottom: 40px;
 }
 #mysl{
     width: 100%;
     text-align: center;
     justify-content: center;
+    padding-top:50px;
 }
 .walle{
     padding: 0;
@@ -755,13 +756,14 @@ section#teams {
     }
     .scroll-up-btn{
         right: 15px;
-        width: 35px;
         font-size: 23px;
         line-height: 40px;
    }
-.scroll-up-btn{
-        height: 38px;
-	}
+.scroll-up-btn.show {
+    height: 35px;
+    line-height: 36px;	
+    width: 35px;
+}	
 .social2 ul{
 	padding: 0;
 	 bottom: 15px;
@@ -783,7 +785,7 @@ section#teams {
 .walle{
     width: 100%;
 }
-.footer{
+footer{
      font-size:9px;
 	padding: 15px 24px 15px 13px;
 }
@@ -797,10 +799,10 @@ section#teams {
 .navbar .logo a span{
     font-size: 28px;
 }	
-	
-	
-	
-	
+#mysl{
+     padding-top:20;
+}
+
 	
 }
 
