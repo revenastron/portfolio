@@ -86,7 +86,7 @@ audio{
     animation-name: ud573d518;
 }*/
 .fade-in{
-    animation: fadeIn 6s;
+    animation: fadeIn 8s;
 } 
 @keyframes fadeIn{
     from{
