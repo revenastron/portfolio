@@ -661,6 +661,12 @@ footer span a:hover{
 section#teams {
     padding: 40px 0 1px;
 }
+.teams .title::after{
+    background: #010101;
+}
+section#teams {
+    background: #010101;
+}
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1104px) {
     .about .about-content .left img{
