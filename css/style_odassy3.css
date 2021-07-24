@@ -32,6 +32,16 @@ section{
     font-size: 13px;
     font-family: sans-serif;
 }
+.reveal{
+    position: relative;
+    transform: translateY(70px);
+    opacity: 0;
+    transition: all 2s ease;
+}
+.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
 #preloader{
     background:#33374f  url("../images/planet.gif") no-repeat center center;
     background-size: 43%;
@@ -75,6 +85,17 @@ audio{
     -webkit-animation-name: ud573d518;
     animation-name: ud573d518;
 }*/
+.fade-in{
+    animation: fadeIn 6s;
+} 
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 .inter{
     position: absolute;
     top: 0;
