@@ -139,7 +139,7 @@ section .title::before{
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #111;
+    background: #010101;
     transform: translateX(-50%);
 }
 section .title::after{
@@ -332,7 +332,7 @@ section .title::after{
 /* services section styling */
 .services, .teams{
     color:#fff;
-    background: #111;
+    background: #010101;
 }
 #team{
     padding: 50px 0 19px;
@@ -343,12 +343,12 @@ section .title::after{
 }
 .services .title::after,
 .teams .title::after{
-    background: #111;
+    background: #010101;
     content: "what i know";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
-    background: #222;
+    background: #111;
     text-align: center;
     border-radius: 6px;
     padding: 50px 25px;
@@ -455,7 +455,7 @@ section .title::after{
     content: "Quotes";
 }
 .teams .carousel .card{
-    background: #222;
+    background: #111;
     border-radius: 6px;
     padding: 25px 35px;
     text-align: center;
@@ -693,7 +693,7 @@ section#teams {
         width: 100%;
         left: -100%;
         top: 0;
-        background: #111;
+        background: #010101;
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
