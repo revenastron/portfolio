@@ -436,19 +436,19 @@ section .title::after{
     background: #6a58b4;
 }
 .skills-content .right .html::before{
-    width: 90%;
+    width: 60%;
 }
 .skills-content .right .css::before{
-    width: 60%;
+    width: 40%;
 }
 .skills-content .right .js::before{
     width: 10%;
 }
 .skills-content .right .php::before{
-    width: 30%;
+    width: 15%;
 }
 .skills-content .right .mysql::before{
-    width: 25%;
+    width: 10%;
 }
 /* teams section styling */
 .teams .title::after{
