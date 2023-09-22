@@ -439,16 +439,16 @@ section .title::after{
     width: 60%;
 }
 .skills-content .right .css::before{
-    width: 40%;
+    width: 45%;
 }
 .skills-content .right .js::before{
-    width: 10%;
+    width: 50%;
 }
 .skills-content .right .php::before{
-    width: 23%;
+    width: 60%;
 }
 .skills-content .right .mysql::before{
-    width: 10%;
+    width: 30%;
 }
 /* teams section styling */
 .teams .title::after{
