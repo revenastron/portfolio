@@ -452,7 +452,7 @@ section .title::after{
 }
 /* teams section styling */
 .projects .title::after{
-    content: "what i did";
+    content: "what i did" !important;
 }
 .teams .carousel .card{
     background: #111;
