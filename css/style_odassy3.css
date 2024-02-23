@@ -451,7 +451,7 @@ section .title::after{
     width: 35%;
 }
 /* teams section styling */
-.teams .title::after{
+.projects .title::after{
     content: "what i did";
 }
 .teams .carousel .card{
