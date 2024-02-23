@@ -342,7 +342,7 @@ section .title::after{
     background: #fff;
 }
 .services .title::after,
-.teams .title::after{
+.projects .title::after{
     background: #010101;
     content: "what i know";
 }
