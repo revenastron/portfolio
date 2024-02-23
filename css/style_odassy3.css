@@ -668,10 +668,12 @@ section#teams {
     background: #010101;
 }
 .projectLink {
-    transform: translateY(10px);
     -webkit-tap-highlight-color: white;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
+}
+.projectLink p {
+    transform: translateY(10px);
 }
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1104px) {
