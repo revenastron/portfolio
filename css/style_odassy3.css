@@ -379,7 +379,7 @@ section .title::after{
 }
 /* skills section styling */
 .skills .title::after{
-    content: "what i can";
+    content: "what I can";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -452,7 +452,7 @@ section .title::after{
 }
 /* teams section styling */
 .teams .title::after{
-    content: "Quotes";
+    content: "what i did";
 }
 .teams .carousel .card{
     background: #111;
