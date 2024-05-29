@@ -29,8 +29,7 @@
                 loader.style.display = "none";  
         })
     </script>
-<!--     <video class="inter" src="intersteller.mp4" muted autoplay loop></video><div class="overlap"></div> -->
-	<video class="inter" src="" muted autoplay loop></video><div class="overlap"></div>
+    <video class="inter" src="blackhole.webm" muted autoplay loop></video><div class="overlap"></div>
     <audio id="myAudio" loop><source src="interms.mp3" type="audio/mpeg"></audio>
         <script>
             var myAudio = document.getElementById("myAudio");
@@ -69,11 +68,12 @@ myAudio.onpause = function() {
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content fade-in">
-                <div class="text-1">Hi</div>
-                <div class="text-2">I'm <span>Nirmal</span></div>
-	        <p class="text1">"And you think life takes more than it gives, but not today.<br> Today it's giving us something. It is giving us a chance."</p>
-                <a href="#" onclick="togglePlay()">Music</a>
+<!--                 <div class="text-1">Hi, I'm</div>
+                <div class="text-2"><span>Nirmal</span></div> -->
+	        <p class="text1">“do not go gentle into that good night.<br>rage, rage against the dying of the light”</p>
+                <!-- <a href="#contact">Contact me</a> -->
             </div>
+            <a class="musicBtn" href="#" onclick="togglePlay()"><i class="fas fa-music"></i></a>
         </div>
     </section>
     <!-- about section start -->
@@ -82,12 +82,12 @@ myAudio.onpause = function() {
             <h2 class="title reveal">About me</h2>
             <div class="about-content">
                 <div class="column left reveal">
-                    <img src="images/imgme2.jpg" alt="">
+                    <img src="images/imgme.jpeg" alt="">
                 </div>
                 <div class="column right reveal">
                     <div class="text">I am Nirmal<span class="typing-2"></span></div>
-                    <p>I am an MCA graduate and a passionate software developer specializing in website and mobile application development. With a love for innovation and a dedication to excellence, I bring ideas to life through code. I thrive on challenges, much like the stars in the vast universe, constantly shining and evolving. As I craft digital solutions, I aim to illuminate the path forward, creating seamless experiences that leave a lasting impact. Let's build something extraordinary together.</p>
-                    <a href="#" onclick="clickno()">My story</a>
+                    <p>As an MCA graduate with a passion for software development, I specialize in both web and mobile application development. I thrive on innovation and excellence, turning ideas into reality through code. With a love for tackling challenges, I aim to create seamless digital solutions that leave a lasting impact. Let’s illuminate the future together.</p>
+                    <a href="#" onclick="clickno()">Resume</a>
                 </div>
             </div>
         </div>
@@ -163,7 +163,7 @@ myAudio.onpause = function() {
                     </div>
                     <div class="bars reveal">
                         <div class="info">
-                            <span>JAVA</span>
+                            <span>Java</span>
                             <span>30%</span>
                         </div>
                         <div class="line mysql"></div>
@@ -209,63 +209,45 @@ myAudio.onpause = function() {
     <!-- contact section start -->
     <section class="contact" id="contact">
         <div class="max-width">
-            <h2 class="title reveal">Contact me</h2>
+            <!-- <h2 class="title reveal"></h2> -->
             <div class="contact-content">
                 <div class="column left">
-                    <div class="text reveal">Info</div>
-
-                    <div class="icons">
-                        <div class="row reveal">
-                            <i class="fas fa-user"></i>
-                            <div class="info">
-                                <div class="head">Name</div>
-                                <div class="sub-title">Nirmal</div>
-                            </div>
-                        </div>
-                        <div class="row reveal">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <div class="info">
-                                <div class="head">Address</div>
-                                <div class="sub-title">Chennai, India</div>
-                            </div>
-                        </div>
-                        <div class="row reveal">
-                            <i class="fas fa-envelope"></i>
-                            <div class="info">
-                                <div class="head">Email</div>
-                                <div class="sub-title">Mightyguardian8@gmail.com</div>
-                            </div>
-                        </div>
-                    </div>
+                    <div class="text msg reveal">Let’s create<br>something great<br>together</div>
                 </div>
                 <div class="column right">
-                    <div class="text reveal">Message me</div>
-                    <form action="#" onclick="clickno()">
-                        <div class="fields">
-                            <div class="field name reveal">
-                                <input type="text" placeholder="Name" required>
-                            </div>
-                            <div class="field email reveal">
-                                <input type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="field reveal">
-                            <input type="text" placeholder="Subject" required>
-                        </div>
-                        <div class="field textarea reveal">
-                            <textarea cols="30" rows="10" placeholder="Message.." required></textarea>
-                        </div>
-                        <div class="button-area reveal">
-                            <!-- <button type="submit" onclick="clickno()">Send message</button>-->
-                        </div>
-                    </div><div class="text reveal" id="mysl">My social
-    <ul class="icons22 reveal">
-        <li><a target="_blank" href="https://www.facebook.com/llamrin12"><i class="fa fa-facebook"></i></a></li>
-        <li><a target="_blank" href="https://twitter.com/revenastron"><i class="fa-brands fa-x-twitter"></i></a></li>
-        <li><a target="_blank" href="https://www.instagram.com/reven_astron/?igshid=63vngfbibgtv" id="about"><i class="fa fa-instagram"></i></a></li>
-        <li><a target="_blank" href="https://www.linkedin.com/in/nirmal-p-0616aa1ba"><i class="fa fa-linkedin"></i></a>></li>
-	    
-    </ul>    
+                    <div class="text reveal">
+                        <a class="email" href="mailto: llamrin12@gmail.com"><span>SEND ME AN EMAIL</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="text reveal" id="mysl">
+                    <ul class="icons22">
+                        <li>
+                            <a target="_blank" href="https://www.facebook.com/llamrin12">
+                                <!-- <i class="fa fa-facebook"></i> -->
+                                <span>Facebook</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.instagram.com/reven_astron/?igshid=63vngfbibgtv" id="about">
+                                <!-- <i class="fa fa-instagram"></i> -->
+                                <span>Instagram</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://www.linkedin.com/in/nirmal-p-0616aa1ba">
+                                <!-- <i class="fa fa-linkedin"></i> -->
+                                <span>LinkedIn</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a target="_blank" href="https://twitter.com/revenastron">
+                                <!-- <i class="fa-brands fa-x-twitter"></i> -->
+                                <span>X</span>
+                            </a>
+                        </li>
+                	    
+                    </ul>    
                 </div>
             </div>
         </div>
