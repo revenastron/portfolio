@@ -3,6 +3,7 @@
 
 :root{
     --purple: #6a58b4;
+    --lightGray: #cecece;
 }
 *{
     margin: 0;
@@ -317,7 +318,7 @@ section .title::after{
 }
 /* about section styling */
 .about .title::after{
-    content: "who i am";
+    content: "who I am";
 }
 .about .about-content .left{
     width: 45%;
@@ -373,7 +374,7 @@ section .title::after{
 .services .title::after,
 .projects .title::after{
     background: #010101;
-    content: "what i know";
+    content: "what I know";
 }
 .services .serv-content .card{
     width: calc(33% - 20px);
@@ -408,7 +409,7 @@ section .title::after{
 }
 /* skills section styling */
 .skills .title::after{
-    content: "what i can";
+    content: "what I can";
 }
 .skills .skills-content .column{
     width: calc(50% - 30px);
@@ -481,7 +482,7 @@ section .title::after{
 }
 /* teams section styling */
 .projects .title::after{
-    content: "what i did" !important;
+    content: "what I did" !important;
 }
 .teams .carousel .card{
     background: #111;
@@ -652,8 +653,8 @@ footer span a:hover{
     justify-content: center;
     margin-top:80px;
     padding: 20px 0;
-    border-top: 1px solid gray;
-    border-bottom: 1px solid gray;
+    border-top: 1px solid var(--lightGray);
+    border-bottom: 1px solid var(--lightGray);
 }
 .walle{
     padding: 0;
@@ -679,6 +680,10 @@ section#teams {
 .projectLink p {
     transform: translateY(10px);
 }
+.icons22 a i {
+    display: none;
+}
+
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media (max-width: 1104px) {
     .about .about-content .left img{
@@ -755,6 +760,7 @@ section#teams {
         margin-bottom: 35px;
     }
 }
+/*///////////////////////////////////////////////////////*/
 @media (max-width: 690px) {
     .max-width{
         padding: 0 23px;
@@ -771,7 +777,26 @@ section#teams {
     .services .serv-content .card{
         width: 100%;
     }
+    .contact .contact-content .left .msg {
+        text-align: center;
+    }
+    .contact .contact-content .right {
+        justify-content: center;
+    }
+    .icons22 a {
+        font-size: 22px;
+    }
+    .icons22 a i {
+        display: block;
+    }
+    .icons22 span {
+        display: none;
+    }
+    .walle{
+        width: 100%;
+    }
 }
+/*//////////////////////////////////////////////////////*/
 @media (max-width: 500px) {
     .home .home-content .text-2{
         font-size: 50px;
@@ -790,6 +815,12 @@ section#teams {
     .contact .right form .email{
         margin: 0;
     }
+    .contact .contact-content .left .msg {
+        font-size: 8.2vw;
+    }
+    .contact .contact-content .right .email {
+        font-size: 6.2vw;
+    }
     .right form .error-box{
        width: 150px;
     }
@@ -798,52 +829,49 @@ section#teams {
         font-size: 23px;
         line-height: 40px;
    }
-.scroll-up-btn.show {
-    height: 35px;
-    line-height: 36px;	
-    width: 35px;
-    bottom:36px;
-}	
-.social2 ul{
-	padding: 0;
-	 bottom: 15px;
-}
-.social2 span{
-	font-size: 13px;
-	padding: 5px;
-	border-right: none;
-}
-.social2 a{
-	padding: 0;
-}
-#preloader{
-    background-size: 95%;
-}
-.text1{
-    font-size:12px;
-}
-.walle{
-    width: 100%;
-}
-footer{
-     font-size:8px;
-	padding: 15px 24px 19px 13px;
-}
-.about .about-content .left img{
-    height: 99%;
-    width: 99%;
-}	
-.navbar .logo a{
-    font-size: 28px;
-}
-.navbar .logo a span{
-    font-size: 28px;
-}	
-#mysl{
-     padding-top:20px;
-}
-#contact{
-	padding-bottom:70px;
-	
-}
+    .scroll-up-btn.show {
+        height: 35px;
+        line-height: 36px;	
+        width: 35px;
+        bottom:36px;
+    }	
+    .social2 ul{
+    	padding: 0;
+    	 bottom: 15px;
+    }
+    .social2 span{
+    	font-size: 13px;
+    	padding: 5px;
+    	border-right: none;
+    }
+    .social2 a{
+    	padding: 0;
+    }
+    #preloader{
+        background-size: 95%;
+    }
+    .text1{
+        font-size:12px;
+    }
+    footer{
+         font-size:8px;
+    	padding: 15px 24px 19px 13px;
+    }
+    .about .about-content .left img{
+        height: 99%;
+        width: 99%;
+    }	
+    .navbar .logo a{
+        font-size: 28px;
+    }
+    .navbar .logo a span{
+        font-size: 28px;
+    }	
+    #mysl{
+         margin-top:20px;
+    }
+    #contact{
+    	padding-bottom:70px;
+    	
+    }
 
