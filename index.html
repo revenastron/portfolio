@@ -23,29 +23,11 @@
 </head>
 <body>
 	<div id="preloader"></div>
-    <script>
-        var loader = document.getElementById("preloader");
-           window.addEventListener("load", function(){
-                loader.style.display = "none";  
-        })
-    </script>
-    <video class="inter" src="blackhole.webm" muted autoplay loop></video><div class="overlap"></div>
-    <audio id="myAudio" loop><source src="interms.mp3" type="audio/mpeg"></audio>
-        <script>
-            var myAudio = document.getElementById("myAudio");
-var isPlaying = false;
 
-function togglePlay() {
-  isPlaying ? myAudio.pause() : myAudio.play();
-};
+    <video class="inter" src="assets/blackhole.webm" muted autoplay loop></video>
+    <audio id="myAudio" loop><source src="assets/interms.mp3" type="audio/mpeg"></audio>
 
-myAudio.onplaying = function() {
-  isPlaying = true;
-};
-myAudio.onpause = function() {
-  isPlaying = false;
-};
-        </script>
+    <div class="overlap"></div>
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up"></i>
     </div>
@@ -68,10 +50,7 @@ myAudio.onpause = function() {
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content fade-in">
-<!--                 <div class="text-1">Hi, I'm</div>
-                <div class="text-2"><span>Nirmal</span></div> -->
-	        <p class="text1">“do not go gentle into that good night.<br>rage, rage against the dying of the light”</p>
-                <!-- <a href="#contact">Contact me</a> -->
+	           <p class="text1">“do not go gentle into that good night.<br>rage, rage against the dying of the light”</p>
             </div>
             <a class="musicBtn" href="#" onclick="togglePlay()"><i class="fas fa-music"></i></a>
         </div>
@@ -87,7 +66,8 @@ myAudio.onpause = function() {
                 <div class="column right reveal">
                     <div class="text">I am Nirmal<span class="typing-2"></span></div>
                     <p>As an MCA graduate with a passion for software development, I specialize in both web and mobile application development. I thrive on innovation and excellence, turning ideas into reality through code. With a love for tackling challenges, I aim to create seamless digital solutions that leave a lasting impact. Let’s illuminate the future together.</p>
-                    <a href="#" onclick="clickno()">Resume</a>
+                    <a href="assets/Resume_nirmal.pdf">Resume</a> 
+                    <!-- resume 03_24 -->
                 </div>
             </div>
         </div>
@@ -183,7 +163,9 @@ myAudio.onpause = function() {
                         <div class="text">Academic project</div>
                         <p>A portal for staffs and students to get the schedules and class details in real time with their ID number. This web application is made using Html, Bootstrap and PHP.</p>
                     </div>
-			<a class="projectLink" target="_blank" href="https://sjc-search.000webhostapp.com/"><p>View</p></a>
+        			<a class="projectLink" target="_blank" href="https://sjc-search.000webhostapp.com/">
+                        <p>View</p>
+                    </a>
                 </div>
                 <div class="card reveal">
                     <div class="box">
@@ -191,7 +173,9 @@ myAudio.onpause = function() {
                         <div class="text">Mobile game</div>
                         <p>A small game which uses some logics to find the cricketer user picks among the list. This application is developed with React Native and published in the playstore.</p>
                     </div>
-			<a class="projectLink" target="_blank" href="https://play.google.com/store/apps/details?id=com.sjc.mrg&hl=en&gl=US"><p>View</p></a>
+        			<a class="projectLink" target="_blank" href="https://play.google.com/store/apps/details?id=com.sjc.mrg&hl=en&gl=US">
+                        <p>View</p>
+                    </a>
                 </div>
                 <div class="card reveal">
                     <div class="box">
@@ -199,14 +183,15 @@ myAudio.onpause = function() {
                         <div class="text">Internship</div>
                         <p>This project is developed for a client organization in both web and mobile platforms using js frameworks and is about calculating the corbon emission from ships annually.</p>
                     </div>
-			<a class="projectLink" target="_blank" href="https://www.esdcalculator.azolla.sg/"><p>View</p></a>
+        			<a class="projectLink" target="_blank" href="https://www.esdcalculator.azolla.sg/">
+                        <p>View</p>
+                    </a>
                 </div>
-               </div>
             </div>
         </div>
     </section>
-<!-- 	<img class="blacked" src="images/black.jpg" width="100%" object-fit= "cover"><img class="blacked" src="images/Kidmask.jpg" width="100%" object-fit= "cover"> -->
-    <!-- contact section start -->
+
+    <!--------------------------- contact section start -------------------------------->
     <section class="contact" id="contact">
         <div class="max-width">
             <!-- <h2 class="title reveal"></h2> -->
@@ -216,7 +201,7 @@ myAudio.onpause = function() {
                 </div>
                 <div class="column right">
                     <div class="text reveal">
-                        <a class="email" href="mailto: llamrin12@gmail.com"><span>SEND ME AN EMAIL</span>
+                        <a class="email" href="mailto:llamrin12@gmail.com"><span>SEND ME AN EMAIL</span>
                         </a>
                     </div>
                 </div>
@@ -258,102 +243,87 @@ myAudio.onpause = function() {
     <footer>
         <span>Developed by <a href="#">Nirmal</a> | Copyright <span class="far fa-copyright"></span> 2024 RevenAstron</span>
     </footer>
+
+<!------------------------------------- Javascript ------------------------------------------>
     <script>
+        //////////////// Preloader hide /////////////////////
+        var loader = document.getElementById("preloader");
+        window.addEventListener("load", function(){
+            loader.style.display = "none";  
+        })
+
+        //////////////// Music toggle ////////////////////////
+        var myAudio = document.getElementById("myAudio");
+        var isPlaying = false;
+
+        function togglePlay() {
+          isPlaying ? myAudio.pause() : myAudio.play();
+        };
+
+        myAudio.onplaying = function() {
+          isPlaying = true;
+        };
+        myAudio.onpause = function() {
+          isPlaying = false;
+        };
+
+        /////////////////////////////////////////////////////
         $(document).ready(function(){
-    $(window).scroll(function(){
-        // sticky navbar on scroll script
-        if(this.scrollY > 20){
-            $('.navbar').addClass("sticky");
-        }else{
-            $('.navbar').removeClass("sticky");
+                $(window).scroll(function(){
+                    // sticky navbar on scroll script
+                    if(this.scrollY > 20){
+                        $('.navbar').addClass("sticky");
+                    }else{
+                        $('.navbar').removeClass("sticky");
+                    }
+                    
+                    // scroll-up button show/hide script
+                    if(this.scrollY > 200){
+                        $('.scroll-up-btn').addClass("show");
+                    }else{
+                        $('.scroll-up-btn').removeClass("show");
+                    }
+                });
+
+                // slide-up script
+                $('.scroll-up-btn').click(function(){
+                    $('html').animate({scrollTop: 0});
+                    // removing smooth scroll on slide-up button click
+                    $('html').css("scrollBehavior", "auto");
+                });
+                $('.navbar .menu li a').click(function(){
+                    // applying again smooth scroll on menu items click
+                    $('html').css("scrollBehavior", "smooth");
+                });
+                // toggle menu/navbar script
+                $('.menu-btn').click(function(){
+                    $('.navbar .menu').toggleClass("active");
+                    $('.menu-btn i').toggleClass("active");
+                });
+        });
+
+        /*///////////////////////////////////////////////////////////////*/
+        function clickno(){
+            alert("Feature under contruction⚙️🔧")
         }
-        
-        // scroll-up button show/hide script
-        if(this.scrollY > 200){
-            $('.scroll-up-btn').addClass("show");
-        }else{
-            $('.scroll-up-btn').removeClass("show");
-        }
-    });
-    // slide-up script
-    $('.scroll-up-btn').click(function(){
-        $('html').animate({scrollTop: 0});
-        // removing smooth scroll on slide-up button click
-        $('html').css("scrollBehavior", "auto");
-    });
-    $('.navbar .menu li a').click(function(){
-        // applying again smooth scroll on menu items click
-        $('html').css("scrollBehavior", "smooth");
-    });
-    // toggle menu/navbar script
-    $('.menu-btn').click(function(){
-        $('.navbar .menu').toggleClass("active");
-        $('.menu-btn i').toggleClass("active");
-    });
-    // typing text animation script
-    var typed = new Typed(".typing", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-    var typed = new Typed(".typing-2", {
-        strings: ["YouTuber", "Developer", "Blogger", "Designer", "Freelancer"],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true
-    });
-    // owl carousel script
-    $('.carousel').owlCarousel({
-        margin: 20,
-        loop: true,
-        autoplay: true,
-        autoplayTimeOut: 2000,
-        autoplayHoverPause: true,
-        responsive: {
-            0:{
-                items: 1,
-                nav: false
-            },
-            600:{
-                items: 2,
-                nav: false
-            },
-            1000:{
-                items: 3,
-                nav: false
+
+        ////////////////// Content reveal on landing //////////////////////
+        window.addEventListener('scroll', reveal);
+
+        function reveal(){
+          var reveals = document.querySelectorAll('.reveal');
+
+          for(var i = 0; i < reveals.length; i++){
+
+            var windowheight = window.innerHeight;
+            var revealtop = reveals[i].getBoundingClientRect().top;
+            var revealpoint = 150;
+
+            if(revealtop < windowheight - revealpoint){
+              reveals[i].classList.add('active');
             }
+          }
         }
-    });
-});
-
-/*//////////////////////////////////////////*/
-function clickno(){
-    alert("Feature under contruction⚙️🔧")
-}
-
-</script>
-<!--//////////////////////////////////////////-->
-<script type="text/javascript">
-    window.addEventListener('scroll', reveal);
-
-    function reveal(){
-      var reveals = document.querySelectorAll('.reveal');
-
-      for(var i = 0; i < reveals.length; i++){
-
-        var windowheight = window.innerHeight;
-        var revealtop = reveals[i].getBoundingClientRect().top;
-        var revealpoint = 150;
-
-        if(revealtop < windowheight - revealpoint){
-          reveals[i].classList.add('active');
-        }
-        /*else{
-          reveals[i].classList.remove('active');
-        }*/
-      }
-    }
-</script>
+    </script>
 </body>
 </html>
