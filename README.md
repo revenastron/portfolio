@@ -18,12 +18,9 @@ Welcome to my personal portfolio website! 🚀 This website showcases my skills,
 - **JavaScript** – Enhancing interactivity.  
 
 ## 📌 Future Enhancements  
-- Improve animations for a smoother user experience.  
+- Improve animations and transitions.  
 - Add more interactivity using JavaScript.  
 - Optimize performance for faster loading.  
-
-## 🚀 Live Demo  
-Check out my portfolio: [RevenAstron GitHub Pages](https://revenastron.github.io/portfolio)  
 
 ## 📩 Contact  
 Feel free to reach out via email or social media!  
