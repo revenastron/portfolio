@@ -1,31 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Space Odyssey</title>
     <link rel="stylesheet" href="style.css">
-	
+
     <!-- Font awesome v6.4.2 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Font awesome v5.15.3 -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-	
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/style_odassy3.css">
-	
+
 </head>
+
 <body>
-	<div id="preloader"></div>
+    <div id="preloader"></div>
 
     <video class="inter" src="assets/blackhole.webm" muted autoplay loop></video>
-    <audio id="myAudio" loop><source src="assets/interms.mp3" type="audio/mpeg"></audio>
+    <audio id="myAudio" loop>
+        <source src="assets/interms.mp3" type="audio/mpeg">
+    </audio>
 
     <div class="overlap"></div>
     <div class="scroll-up-btn">
@@ -50,7 +58,8 @@
     <section class="home" id="home">
         <div class="max-width">
             <div class="home-content fade-in">
-	           <p class="text1">“do not go gentle into that good night.<br>rage, rage against the dying of the light”</p>
+                <p class="text1">“do not go gentle into that good night.<br>rage, rage against the dying of the light”
+                </p>
             </div>
             <a class="musicBtn" href="#" onclick="togglePlay()"><i class="fas fa-music"></i></a>
         </div>
@@ -64,9 +73,32 @@
                     <img src="images/imgme.jpeg" alt="">
                 </div>
                 <div class="column right reveal">
-                    <div class="text">I am Nirmal<span class="typing-2"></span></div>
-                    <p>I’m a frontend engineer with professional experience building AI-powered and data-driven web applications. I work mainly with React, TypeScript and modern UI tooling to create clean, accessible interfaces. Over the past years I’ve contributed to products like an AI-powered LMS, HR dashboards and financial planning tools, collaborating closely with designers, product managers and backend developers. I enjoy simplifying complex flows, focusing on usability and shipping interfaces that people actually use.</p>
-                    <a href="assets/Resume_nirmal.pdf">Resume</a> 
+                    <div class="text">I'm Nirmal<span class="typing-2"></span></div>
+                    <div>
+                        <p style="text-align:justify;padding-bottom: 10px;">A Software Developer
+                            building web
+                            applications using React and TypeScript.
+                            I’ve contributed to AI-powered platforms, financial tools, and data-driven dashboards,
+                            with
+                            a
+                            focus
+                            on creating clear, usable interfaces and simplifying complex ideas into practical
+                            solutions.<br></p>
+
+
+                        <p style="padding-bottom: 10px;">My academic journey moves through Physics, Computer
+                            Applications, and Education (B.Ed.),
+                            bringing analytical thinking, technical expertise, and a structured understanding of
+                            teaching
+                            and learning. Over time, I’ve found myself drawn not just to building systems, but to
+                            breaking
+                            them down, making ideas accessible, connecting concepts, and helping others see what lies
+                            underneath.</p>
+
+                        <p>I am currently preparing for UGC NET with the goal of transitioning into an academic role,
+                            continuing to stay engaged with evolving technologies.</p>
+                    </div>
+                    <a href="assets/Resume_nirmal.pdf">Resume</a>
                     <!-- resume 03_24 -->
                 </div>
             </div>
@@ -80,110 +112,146 @@
                 <div class="card reveal">
                     <div class="box">
                         <i class="fas fa-code"></i>
-                        <div class="text">Web</div>
-                        <p>Front end web devolopment programming with html, css, and JavaScript framworks.</p>
+                        <div class="text">Coding</div>
+                        <p class="card-desc">Developing responsive, user-centric web applications and intuitive
+                            interfaces using React.js,
+                            TypeScript, and modern JavaScript.</p>
                     </div>
                 </div>
                 <div class="card reveal">
                     <div class="box">
-                        <i class="fa-solid fa-mobile"></i>
-                        <div class="text">Mobile</div>
-                        <p>Quite good knowlegde & experience in mobile app development with React Native.</p>
+                        <i class="fas fa-network-wired"></i>
+                        <div class="text">Management</div>
+                        <p class="card-desc">Coordinating cross-functional workflows, managing technical programs and
+                            integrating AI
+                            tools into practical workflows.</p>
                     </div>
                 </div>
                 <div class="card reveal">
                     <div class="box">
-                        <i class="fas fa-photo-film"></i>
-                        <div class="text">Multimedia</div>
-                        <p>Strong interest in video editing and animation, with experience using OpenShot, Blender 3D etc.</p>
+                        <i class="fa-solid fa-graduation-cap"></i>
+                        <div class="text">Pedagogy</div>
+                        <p class="card-desc">Fusing technical expertise and formal B.Ed. training to simplify complex
+                            ideas through modern
+                            mentoring, digital tools, and proactive learning methods.</p>
                     </div>
                 </div>
-               </div>
             </div>
         </div>
+        </div>
     </section>
-    <!-- skills section start -->
-    <section class="skills" id="knowledge">
+    <!-- trajectory / journey section start -->
+    <section class="trajectory" id="knowledge">
         <div class="max-width">
-            <h2 class="title reveal">Coding Knowledge</h2>
-            <div class="skills-content">
-                <div class="column left reveal">
-                    <div class="text">My creative skills & experiences.</div>
-                  <!--  <p>*****UNDER CONSTRUCTION*****</p>
-                    <a href="#">Read more</a>-->
-                </div>
-                <div class="column right">
-                    <div class="bars reveal">
-                        <div class="info">
-                            <span>HTML</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line html"></div>
+            <h2 class="title reveal">My Trajectory</h2>
+            <!-- <p class="trajectory-subtitle reveal">The Journey So Far</p> -->
+            <div class="timeline">
+
+                <!-- Item 1 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-node">
+                        <span class="node-dot"></span>
                     </div>
-                    <div class="bars reveal">
-                        <div class="info">
-                            <span>CSS</span>
-                            <span>45%</span>
-                        </div>
-                        <div class="line css"></div>
-                    </div>
-                    <div class="bars reveal">
-                        <div class="info">
-                            <span>JavaScript</span>
-                            <span>50%</span>
-                        </div>
-                        <div class="line js"></div>
-                    </div>
-                    <div class="bars reveal">
-                        <div class="info">
-                            <span>React.JS</span>
-                            <span>60%</span>
-                        </div>
-                        <div class="line php"></div>
-                    </div>
-                    <div class="bars reveal">
-                        <div class="info">
-                            <span>Java</span>
-                            <span>30%</span>
-                        </div>
-                        <div class="line mysql"></div>
+                    <div class="timeline-card right-card">
+                        <span class="timeline-date">2026 – Present</span>
+                        <h3 class="timeline-title">A New Horizon</h3>
+                        <p class="timeline-desc">Currently operating as a freelance developer while steering my ship
+                            firmly toward academia. As I prepare for the UGC NET, my ultimate mission is to transition
+                            into full-time teaching. My goal is to bring real-world industry experience, digital
+                            simulators, and modern problem-solving directly into the classroom to guide the next
+                            generation of learners.</p>
                     </div>
                 </div>
+
+                <!-- Item 2 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-node">
+                        <span class="node-dot"></span>
+                    </div>
+                    <div class="timeline-card left-card">
+                        <span class="timeline-date">2023 – 2025</span>
+                        <h3 class="timeline-title">The Convergence</h3>
+                        <p class="timeline-desc">A pivotal phase where my technical trajectory aligned with a core part
+                            of my character: the natural urge to share what I know and explain complex ideas to others.
+                            To formalize this, I earned my Bachelor of Education (B.Ed.) while staying active in the
+                            tech industry. Whether managing college-to-career apprenticeships or building AI front-ends,
+                            this era proved that software development and mentoring can perfectly orbit one another.</p>
+                    </div>
+                </div>
+
+                <!-- Item 3 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-node">
+                        <span class="node-dot"></span>
+                    </div>
+                    <div class="timeline-card right-card">
+                        <span class="timeline-date">2021 – 2023</span>
+                        <h3 class="timeline-title">Entering the Digital Space</h3>
+                        <p class="timeline-desc">Wanting to step away from pure theory and dive into applied
+                            engineering, I adjusted my coordinates to pursue a Master of Computer Applications (MCA).
+                            This marked my full entry into the digital realm. I transitioned from a student to a
+                            Front-End Developer at Qantler Technologies, mastering React and learning to turn abstract
+                            logic into tangible, interactive web interfaces.</p>
+                    </div>
+                </div>
+
+                <!-- Item 4 -->
+                <div class="timeline-item reveal">
+                    <div class="timeline-node">
+                        <span class="node-dot"></span>
+                    </div>
+                    <div class="timeline-card left-card">
+                        <span class="timeline-date">2018 – 2021</span>
+                        <h3 class="timeline-title">The Foundation</h3>
+                        <p class="timeline-desc">Driven by a childhood fascination with "infinity and beyond," I
+                            launched my academic journey with a Bachelor of Science in Physics at Loyola College.
+                            Exploring astrophysics and electronics certainly fed my scientific curiosity, but more
+                            importantly, it hardwired the analytical problem-solving and structural thinking that I rely
+                            on today.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
     <!-- teams section start -->
-	<section class="services projects" id="projects">
+    <section class="services projects" id="projects">
         <div class="max-width">
             <h2 class="title">Projects</h2>
             <div class="serv-content">
                 <div class="card reveal">
                     <div class="box">
-                        <i class="fa-solid fa-calendar-days"></i>
-                        <div class="text">Academic project</div>
-                        <p>A portal for staffs and students to get the schedules and class details in real time with their ID number. This web application is made using Html, Bootstrap and PHP.</p>
+                        <i class="fa-solid fa-magnifying-glass-dollar"></i>
+                        <div class="text">EAL Plan</div>
+                        <p class="card-desc">A current freelance project (Jan 2026–Present) delivering an interactive
+                            financial planning
+                            tool that utilizes data-driven simulations to navigate complex scenarios.</p>
                     </div>
-        			<a class="projectLink" target="_blank" href="https://sjc-search.000webhostapp.com/">
+                    <a class="projectLink" target="_blank" href="https://ealplan.com/">
                         <p>View</p>
                     </a>
                 </div>
                 <div class="card reveal">
                     <div class="box">
-                        <i class="fa-solid fa-gamepad"></i>
-                        <div class="text">Mobile game</div>
-                        <p>A small game which uses some logics to find the cricketer user picks among the list. This application is developed with React Native and published in the playstore.</p>
+                        <i class="fa-solid fa-shirt"></i>
+                        <div class="text">Closet Diary</div>
+                        <p class="card-desc">An ongoing personal project building a systemic wardrobe companion designed
+                            to optimize
+                            clothing usage, plan outfits, and reduce day-to-day decision fatigue.</p>
                     </div>
-        			<a class="projectLink" target="_blank" href="https://play.google.com/store/apps/details?id=com.sjc.mrg&hl=en&gl=US">
+                    <a class="projectLink" target="_blank" href="https://closet-diary.vercel.app/welcome">
                         <p>View</p>
                     </a>
                 </div>
                 <div class="card reveal">
                     <div class="box">
-                        <i class="fa-solid fa-anchor"></i>
-                        <div class="text">Internship</div>
-                        <p>This project is developed for a client organization in both web and mobile platforms using js frameworks and is about calculating the corbon emission from ships annually.</p>
+                        <i class="fa-solid fa-book-open"></i>
+                        <div class="text">AI LMS</div>
+                        <p class="card-desc">A professional project completed in 2025, featuring an AI-powered Learning
+                            Management System
+                            that offers customized portals to enhance the educational experience.</p>
                     </div>
-        			<a class="projectLink" target="_blank" href="https://www.esdcalculator.azolla.sg/">
+                    <a class="projectLink" target="_blank" href="https://ailms.campusinsights.ai/welcome">
                         <p>View</p>
                     </a>
                 </div>
@@ -193,69 +261,102 @@
 
     <!--------------------------- contact section start -------------------------------->
     <section class="contact" id="contact">
+        <!-- animated star particles -->
+        <div class="contact-stars" aria-hidden="true">
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span>
+        </div>
+
         <div class="max-width">
-            <!-- <h2 class="title reveal"></h2> -->
-            <div class="contact-content">
-                <div class="column left">
-                    <div class="text msg reveal">Let’s create<br>something great<br>together</div>
+            <div class="contact-inner">
+                <!-- top: signal label -->
+                <p class="contact-signal reveal">
+                    <span class="signal-dot"></span>
+                    Open for Oppertunities
+                </p>
+
+                <!-- main heading -->
+                <h2 class="contact-heading reveal">
+                    Let’s create something great<br><span>together.</span>
+                </h2>
+
+                <!-- email CTA -->
+                <a class="contact-email-btn reveal" href="mailto:nirmal.codecrafts@gmail.com" id="contact-email-cta">
+                    <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                    <span class="btn-text">Get in Touch</span>
+                    <span class="btn-glow"></span>
+                </a>
+
+                <!-- divider -->
+                <div class="contact-divider reveal">
+                    <span></span>
+                    <p>or reach me on</p>
+                    <span></span>
                 </div>
-                <div class="column right">
-                    <div class="text reveal">
-                        <a class="email" href="mailto:nirmal.codecrafts@gmail.com"><span>SEND ME AN EMAIL</span>
+
+                <!-- social links -->
+                <ul class="contact-socials reveal" id="mysl">
+                    <li>
+                        <a target="_blank" href="https://www.facebook.com/llamrin12" title="Facebook">
+                            <i class="fa fa-facebook"></i>
+                            <span>Facebook</span>
                         </a>
-                    </div>
-                </div>
-                <div class="text reveal" id="mysl">
-                    <ul class="icons22">
-                        <li>
-                            <a target="_blank" href="https://www.facebook.com/llamrin12">
-                                <i class="fa fa-facebook"></i>
-                                <span>Facebook</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.instagram.com/reven_astron/?igshid=63vngfbibgtv" id="about">
-                                <i class="fa fa-instagram"></i>
-                                <span>Instagram</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://x.com/revenastron">
-                                <i class="fa-brands fa-x-twitter"></i>
-                                <span>X</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://www.linkedin.com/in/nirmal-p-0616aa1ba">
-                                <i class="fa fa-linkedin"></i>
-                                <span>LinkedIn</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a target="_blank" href="https://github.com/revenastron">
-                                <i class="fa-brands fa-github"></i>
-                                <span>Github</span>
-                            </a>
-                        </li>
-                	    
-                    </ul>    
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.instagram.com/reven_astron/?igshid=63vngfbibgtv"
+                            title="Instagram" id="about">
+                            <i class="fa fa-instagram"></i>
+                            <span>Instagram</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://x.com/revenastron" title="X / Twitter">
+                            <i class="fa-brands fa-x-twitter"></i>
+                            <span>X</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://www.linkedin.com/in/nirmal-p-0616aa1ba" title="LinkedIn">
+                            <i class="fa fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a target="_blank" href="https://github.com/revenastron" title="GitHub">
+                            <i class="fa-brands fa-github"></i>
+                            <span>Github</span>
+                        </a>
+                    </li>
+                </ul>
+
+                <!-- WALL-E sits inside contact at the bottom -->
+                <div class="contact-walle" aria-hidden="true">
+                    <img class="walle" src="images/walle.png" alt="WALL-E rover silhouette">
                 </div>
             </div>
         </div>
     </section>
-    <!-- footer section start -->
-	<img class="walle" src="images/walle.png">
-    <!-- footer section start -->
-    <footer>
-        <span>Developed by <a href="#">Nirmal</a> | Copyright <span class="far fa-copyright"></span> 2024 RevenAstron</span>
+
+    <!-- footer -->
+    <footer class="site-footer">
+        <div class="footer-inner max-width">
+            <div class="footer-copy">
+                Designed &amp; developed by Nirmal &nbsp;&middot;&nbsp; &copy; <span id="current-year"></span>
+                RevenAstron
+            </div>
+        </div>
     </footer>
 
-<!------------------------------------- Javascript ------------------------------------------>
+    <!------------------------------------- Javascript ------------------------------------------>
     <script>
         //////////////// Preloader hide /////////////////////
         var loader = document.getElementById("preloader");
-        window.addEventListener("load", function(){
-            loader.style.display = "none";  
+        window.addEventListener("load", function () {
+            loader.style.display = "none";
         })
 
         //////////////// Music toggle ////////////////////////
@@ -263,73 +364,74 @@
         var isPlaying = false;
 
         function togglePlay() {
-          isPlaying ? myAudio.pause() : myAudio.play();
+            isPlaying ? myAudio.pause() : myAudio.play();
         };
 
-        myAudio.onplaying = function() {
-          isPlaying = true;
+        myAudio.onplaying = function () {
+            isPlaying = true;
         };
-        myAudio.onpause = function() {
-          isPlaying = false;
+        myAudio.onpause = function () {
+            isPlaying = false;
         };
 
         /////////////////////////////////////////////////////
-        $(document).ready(function(){
-                $(window).scroll(function(){
-                    // sticky navbar on scroll script
-                    if(this.scrollY > 20){
-                        $('.navbar').addClass("sticky");
-                    }else{
-                        $('.navbar').removeClass("sticky");
-                    }
-                    
-                    // scroll-up button show/hide script
-                    if(this.scrollY > 200){
-                        $('.scroll-up-btn').addClass("show");
-                    }else{
-                        $('.scroll-up-btn').removeClass("show");
-                    }
-                });
+        $(document).ready(function () {
+            $(window).scroll(function () {
+                // sticky navbar on scroll script
+                if (this.scrollY > 20) {
+                    $('.navbar').addClass("sticky");
+                } else {
+                    $('.navbar').removeClass("sticky");
+                }
 
-                // slide-up script
-                $('.scroll-up-btn').click(function(){
-                    $('html').animate({scrollTop: 0});
-                    // removing smooth scroll on slide-up button click
-                    $('html').css("scrollBehavior", "auto");
-                });
-                $('.navbar .menu li a').click(function(){
-                    // applying again smooth scroll on menu items click
-                    $('html').css("scrollBehavior", "smooth");
-                });
-                // toggle menu/navbar script
-                $('.menu-btn').click(function(){
-                    $('.navbar .menu').toggleClass("active");
-                    $('.menu-btn i').toggleClass("active");
-                });
+                // scroll-up button show/hide script
+                if (this.scrollY > 200) {
+                    $('.scroll-up-btn').addClass("show");
+                } else {
+                    $('.scroll-up-btn').removeClass("show");
+                }
+            });
+
+            // slide-up script
+            $('.scroll-up-btn').click(function () {
+                $('html').animate({ scrollTop: 0 });
+                // removing smooth scroll on slide-up button click
+                $('html').css("scrollBehavior", "auto");
+            });
+            $('.navbar .menu li a').click(function () {
+                // applying again smooth scroll on menu items click
+                $('html').css("scrollBehavior", "smooth");
+            });
+            // toggle menu/navbar script
+            $('.menu-btn').click(function () {
+                $('.navbar .menu').toggleClass("active");
+                $('.menu-btn i').toggleClass("active");
+            });
         });
 
         /*///////////////////////////////////////////////////////////////*/
-        function clickno(){
+        function clickno() {
             alert("Feature under contruction⚙️🔧")
         }
 
         ////////////////// Content reveal on landing //////////////////////
         window.addEventListener('scroll', reveal);
 
-        function reveal(){
-          var reveals = document.querySelectorAll('.reveal');
+        function reveal() {
+            var reveals = document.querySelectorAll('.reveal');
 
-          for(var i = 0; i < reveals.length; i++){
+            for (var i = 0; i < reveals.length; i++) {
 
-            var windowheight = window.innerHeight;
-            var revealtop = reveals[i].getBoundingClientRect().top;
-            var revealpoint = 150;
+                var windowheight = window.innerHeight;
+                var revealtop = reveals[i].getBoundingClientRect().top;
+                var revealpoint = 150;
 
-            if(revealtop < windowheight - revealpoint){
-              reveals[i].classList.add('active');
+                if (revealtop < windowheight - revealpoint) {
+                    reveals[i].classList.add('active');
+                }
             }
-          }
         }
     </script>
 </body>
+
 </html>
