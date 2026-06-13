@@ -26,6 +26,68 @@ body {
     color: rgba(255, 255, 255, 0.85);
 }
 
+/* ============================================================
+   Space canvas — full viewport, fixed, renders behind all content.
+   pointer-events: none ensures all clicks pass through.
+   z-index 2 keeps it above section backgrounds but below navbar.
+   ============================================================ */
+#space-canvas {
+    position: fixed;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    pointer-events: none;
+    z-index: 2;
+    mix-blend-mode: screen;
+    /* dark areas = invisible; stars/nebula add light, never cover content */
+}
+
+/* ============================================================
+   Custom cursor — dot + lagging ring
+   mix-blend-mode: difference on the dot makes it always visible:
+   white on dark sections, dark on lighter areas — never lost.
+   ============================================================ */
+#cursor-dot,
+#cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+    will-change: transform;
+    border-radius: 50%;
+}
+
+#cursor-dot {
+    width: 8px;
+    height: 8px;
+    background: #ffffff;
+    mix-blend-mode: difference;
+}
+
+#cursor-ring {
+    width: 36px;
+    height: 36px;
+    border: 1.5px solid rgba(255, 255, 255, 0.65);
+    background: transparent;
+    transition: width 0.35s ease, height 0.35s ease, border-color 0.35s ease;
+    mix-blend-mode: difference;
+}
+
+#cursor-ring.is-hovered {
+    width: 52px;
+    height: 52px;
+    border-color: rgba(165, 140, 255, 0.9);
+}
+
+@media (pointer: coarse) {
+
+    #cursor-dot,
+    #cursor-ring {
+        display: none;
+    }
+}
+
 /* custom scroll bar */
 ::-webkit-scrollbar {
     width: 10px;
@@ -58,9 +120,10 @@ section {
 
 .reveal {
     position: relative;
-    transform: translateY(70px);
+    transform: translateY(60px);
     opacity: 0;
-    transition: all 1s ease;
+    transition: transform 1.4s cubic-bezier(0.22, 1, 0.36, 1),
+        opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .active {
@@ -181,7 +244,7 @@ section .title::before {
     left: 50%;
     width: 180px;
     height: 3px;
-    background: #010101;
+    background: var(--dark-void);
     transform: translateX(-50%);
 }
 
@@ -480,7 +543,7 @@ section .title::after {
 .services,
 .teams {
     color: #fff;
-    background: #010101;
+    background: var(--dark-void);
 }
 
 #team {
@@ -494,7 +557,7 @@ section .title::after {
 
 .services .title::after,
 .projects .title::after {
-    background: #010101;
+    background: var(--dark-void);
     content: "what I know";
 }
 
@@ -505,8 +568,27 @@ section .title::after {
     border-radius: 6px;
     padding: 50px 25px;
     cursor: pointer;
-    transition: all 0.3s ease;
+    transition: background 0.3s ease, transform 0.3s ease,
+        opacity 1.4s cubic-bezier(0.22, 1, 0.36, 1) var(--card-delay, 0ms),
+        transform 1.4s cubic-bezier(0.22, 1, 0.36, 1) var(--card-delay, 0ms);
     height: stretch;
+    position: relative;
+    /* create stacking context */
+    z-index: 3;
+    /* sit above the space-canvas (z-index: 2) */
+}
+
+/* stagger: each card waits a little longer than the previous */
+.services .serv-content .card:nth-child(1) {
+    --card-delay: 0ms;
+}
+
+.services .serv-content .card:nth-child(2) {
+    --card-delay: 180ms;
+}
+
+.services .serv-content .card:nth-child(3) {
+    --card-delay: 360ms;
 }
 
 .services .serv-content .card:hover {
@@ -595,7 +677,7 @@ section .title::after {
 
 .trajectory .title::after {
     content: "How it went";
-    background: #010101;
+    background: var(--dark-void);
     color: var(--purple);
 }
 
@@ -660,7 +742,7 @@ section .title::after {
     width: 18px;
     height: 18px;
     border-radius: 50%;
-    background: #010101;
+    background: var(--dark-void);
     border: 2.5px solid var(--purple);
     box-shadow:
         0 0 0 4px rgba(106, 88, 180, 0.15),
@@ -835,9 +917,9 @@ section .title::after {
    contact section — cosmic "Open Channel" redesign
    ============================================================ */
 .contact {
-    background: var(--dark-starfield);
+    background: linear-gradient(to bottom, var(--dark-void) 0%, var(--dark-starfield) 100%);
     color: #fff;
-    padding: 120px 0 0;
+    padding: 140px 0 0;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -1260,7 +1342,7 @@ section .title::after {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 13px;
-    color: rgba(255, 255, 255, 0.45);
+    color: rgba(255, 255, 255, 0.568);
     letter-spacing: 0.6px;
 }
 
@@ -1274,11 +1356,11 @@ section#teams {
 }
 
 .teams .title::after {
-    background: #010101;
+    background: var(--dark-void);
 }
 
 section#teams {
-    background: #010101;
+    background: var(--dark-void);
 }
 
 .projectLink {
@@ -1327,7 +1409,7 @@ section#teams {
         width: 100%;
         left: -100%;
         top: 0;
-        background: #010101;
+        background: var(--dark-void);
         text-align: center;
         padding-top: 80px;
         transition: all 0.3s ease;
